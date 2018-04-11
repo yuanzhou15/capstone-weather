@@ -45,11 +45,14 @@ def data_read(filename):
 def getHour(y,m,d,h):
     # todo input validation
     # print y,m,d,h
-    path = config.dataRootPath + 'radar.{:0>4d}{:0>2d}{:0>2d}.{:0>2d}.dat'.format(y,m,d,h)
+    radarRoot = config.radarRootPath
+    if radarRoot[-1] not in ['/', '\\']:
+        radarRoot += '/'
+    path = radarRoot + 'radar.{:0>4d}{:0>2d}{:0>2d}.{:0>2d}.dat'.format(y,m,d,h)
     # print path
     if not os.path.isfile(path):
         return None
-    return data_read(path)
+    return ('{:0>4d}-{:0>2d}-{:0>2d}.{:0>2d}'.format(y,m,d,h), data_read(path))
 
 def getDay(y,m,d):
     lst = []
@@ -59,7 +62,8 @@ def getDay(y,m,d):
         # yield image
         lst.append(image)
     return lst
-#     return iter(reduce(lambda x,y: x+y, lst, []))
+    # return ('{:0>4d}-{:0>2d}-{:0>2d}'.format(y,m,d), lst)
+    # return iter(reduce(lambda x,y: x+y, lst, []))
 
 def getMonth(y,m):
     lst = []
@@ -67,13 +71,13 @@ def getMonth(y,m):
         # yield getDay(y,m,i)
         d = getDay(y,m,i)
         if not d: continue
-        lst.append(d)
-    return (reduce(lambda x,y: x+y, lst, []))
+        lst.extend(d)
+    return lst # reduce(lambda x,y: x+y, lst, [])
 
 def getYear(y):
     lst = []
     for i in range(1,13):
         m = getMonth(y,i)
         if not m: continue
-        lst.append(m)
-    return reduce(lambda x,y: x+y, lst, [])
+        lst.extend(m)
+    return lst # reduce(lambda x,y: x+y, lst, [])

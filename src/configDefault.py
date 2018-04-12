@@ -10,6 +10,6 @@ config = {
 }
 
 # override common keys from local config
-for k, v in configLocal:
+for k, v in configLocal.items():
     if k in config:
         config[k] = v

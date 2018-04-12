@@ -12,5 +12,6 @@ This is our senior design project, we are looking at both satellite data and rad
 * [Satellite Data]
 * [Radar Data]
 
-
-
+### Accessing the data in code:
+- set the path to the data folders on your machine in configLocal.py
+- then use wdata to access the data 

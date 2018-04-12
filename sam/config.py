@@ -1,1 +1,0 @@
-dataRootPath = 'C:\\Users\\Sa\\Desktop\\radar\\ready\\'

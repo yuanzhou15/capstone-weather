@@ -1,0 +1,4 @@
+#Whats here
+
+uncompress.sh
+script to uncompress the radar data

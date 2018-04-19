@@ -13,3 +13,6 @@ config = {
 for k, v in configLocal.items():
     if k in config:
         config[k] = v
+
+import os
+cached_listdir_sat = os.listdir(config['satelliteRootPath'])

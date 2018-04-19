@@ -3,7 +3,7 @@
 import numpy as np
 import calendar
 import os
-from configDefault import config
+from configDefault import config, cached_listdir_sat
 from netCDF4 import Dataset
 from datetime import datetime, timedelta
 import fnmatch
@@ -110,8 +110,7 @@ class Sat:
             Return: netcdf4 dataset or None """
 
         # todo: input validation
-
-        satRoot = config['radarRootPath']
+        satRoot = config['satelliteRootPath']
         if satRoot[-1] not in ['/', '\\']:
             satRoot += '/'
 
@@ -121,11 +120,18 @@ class Sat:
 
         # find the seconds used in the filename
         # it is assumed the minutes part is always "15" or ""
-        targetFilename = 'goes13.{:0>4d}.{:0>3d}.{:0>2d}{:0>2d}??.BAND_{:0>2d}.nc'.format(
-            y, daynum, hr, ['15', '45'][hr], band)
-        for file in os.listdir(satRoot):
+        targetFilename = u'goes13\.{:0>4d}\.{:0>3d}\.{:0>2d}{:s}??\.BAND_{:0>2d}\.nc'.format(
+            y, daynum, hr, ['15', '45'][halfhr], band).replace(u'??', u'[0-9]{2}')
+        # print targetFilename
+        path = None
+        import re
+        for file in cached_listdir_sat:
             # todo: this should be cached
-            if fnmatch.fnmatch(file, targetFilename):
+
+            match = re.findall(
+                targetFilename.replace(u'??', u'[0-9]{2}'), file)
+            # if fnmatch.fnmatch(file, targetFilename):
+            if match:
                 path = satRoot + file
                 break
 

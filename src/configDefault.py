@@ -6,7 +6,8 @@ from configLocal import config as configLocal
 
 config = {
     'radarRootPath': '',
-    'satelliteRootPath': ''
+    'satelliteRootPath': '',
+    'gmapsKey': ''
 }
 
 # override common keys from local config

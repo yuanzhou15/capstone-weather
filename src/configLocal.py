@@ -4,6 +4,6 @@
 
 # uncomment to override. None or '' values will still cause an override!!
 config = {
-    'radarRootPath': '/home/sam/Desktop/weather/radar/',
-    'satelliteRootPath': '/mnt/hgfs/satellite/'
+    # 'radarRootPath': 'path to a directory that CONTAINS ALL .dat radar files',
+    # 'satelliteRootPath': 'path to a directory that CONTAINS ALL .nc satallite files'
 }

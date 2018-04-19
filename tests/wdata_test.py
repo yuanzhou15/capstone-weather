@@ -13,7 +13,35 @@ from src import wdata
 
 
 class TestRadar(unittest.TestCase):
-    pass
+    hrs = [
+        ((2017, 12, 30, 5), 'radar.20171230.05.dat'),
+        ((2010, 6, 10, 0), 'radar.20100610.00.dat'),
+        ((2016, 12, 26, 23), 'radar.20161226.23.dat'),
+        ((2017, 12, 31, 19), None),
+    ]
+
+    def test_getHour(self):
+        for arg, fname in TestRadar.hrs:
+            hr1 = wdata.Radar.getHour(*arg)
+            hr2 = (arg, wdata.Radar.data_read(fname))
+            if fname is None:
+                self.assertRaises(wdata.Radar.getHour, arg)
+            else:
+                self.assertTrue(TestRadar.eqHr(wdata.Radar.getHour(*arg),
+                                               hr2))
+
+    def test_getDay(self):
+        pass
+
+    def test_getMonth(self):
+        pass
+
+    def test_getYear(self):
+        pass
+
+    @staticmethod
+    def eqHr(dat1, dat2):
+        pass
 
 
 class TestSat(unittest.TestCase):
@@ -34,7 +62,7 @@ class TestSat(unittest.TestCase):
             else:
                 match = TestSat.ncDSequal(wdata.Sat.getHalfHr(*args),
                                           Dataset(config['satelliteRootPath']+ncFile, 'r'))
-            self.assertEquals(match, True)
+            self.assertTrue(match)
 
     def test_getDay(self):
         pass

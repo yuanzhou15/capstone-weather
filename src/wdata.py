@@ -45,7 +45,7 @@ class Radar:
     @staticmethod
     def getHour(y, m, d, h):
         """ Get a single radar image.
-            Return: tuple ('yyyy-mm-dd.hh', image) """
+            Return: tuple ('yyyy-mm-dd.hh', image as ndarray) """
         # todo input validation
         radarRoot = config['radarRootPath']
         if radarRoot[-1] not in ['/', '\\']:

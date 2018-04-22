@@ -20,7 +20,7 @@ cap-weath <br>
 from src import wdata
 ```
 
-#### notebook2.py:
+#### notebook2.ipynb:
 ```python
 import os, sys
 nb_dir = os.path.split(os.getcwd())[0]

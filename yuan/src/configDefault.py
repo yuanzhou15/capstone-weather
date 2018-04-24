@@ -5,8 +5,8 @@
 from configLocal import config as configLocal
 
 config = {
-    'radarRootPath': '',
-    'satelliteRootPath': '',
+    'radarRootPath': '/home/yuan/Documents/Spring-2018/Senior Design/Weather/new-radar-data/radar.2017',
+    'satelliteRootPath': '/home/yuan/Documents/Spring-2018/Senior Design/Weather/new-radar-data/radar.2017',
     'gmapsKey': ''  # googlemaps api key, used for any maps-related code using gmaps library
 }
 
@@ -17,4 +17,4 @@ for k, v in configLocal.items():
 
 # files in satelliteRootPath are enumerated a lot, so we'll cache them here
 import os
-cached_listdir_sat = os.listdir(config['satelliteRootPath'])
+#cached_listdir_sat = os.listdir(config['satelliteRootPath'])

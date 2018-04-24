@@ -3,7 +3,7 @@
 import numpy as np
 import calendar
 import os
-from configDefault import config, cached_listdir_sat
+from configDefault import config
 from netCDF4 import Dataset
 from datetime import datetime, timedelta
 import fnmatch
@@ -102,9 +102,11 @@ class Sat:
     def getHalfHr(y, m, d, hr, halfhr, band):
         """ Get satellite data for a specific half-hour and band
             which corressponde to a unique .nc file in the satallite dataset.
+
             halfhr: 0 or 1 for first or second half hour
             Sspecific minute is assumed to be 15 or 45.
             Specific second is automatically guessed from filenames
+
             Return: netcdf4 dataset or None """
 
         # todo: input validation

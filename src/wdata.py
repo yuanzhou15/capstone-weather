@@ -144,7 +144,7 @@ class Sat:
         lst = []
         for i in range(24):
             hh1 = Sat.getHalfHr(y, m, d, i, 0, band)
-            hh2 = Sat.getHalfHr(y, m, d, i, 0, band)
+            hh2 = Sat.getHalfHr(y, m, d, i, 1, band)
             if hh1:
                 lst.append(hh1)
             if hh2:
@@ -164,3 +164,15 @@ class Sat:
         for i in range(1, 13):
             lst.extend(Sat.getMonth(y, i, band))
         return lst
+
+    @staticmethod
+    def getAndClose(ds, var='data'):
+        """
+            Since netcdf files keep file handles open, loading too many files at once without closing them isn't possible.
+            Use this method to read a target variable from netcdf dataset and close it promptly.
+            Example:
+            band2 = [getAndClose(ds) for ds in getMonth(2017, 7, 2)]
+        """
+        dat = ds['/%s' % var][0]
+        ds.close()
+        return dat

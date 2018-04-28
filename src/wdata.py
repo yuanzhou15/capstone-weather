@@ -144,7 +144,7 @@ class Sat:
         lst = []
         for i in range(24):
             hh1 = Sat.getHalfHr(y, m, d, i, 0, band)
-            hh2 = Sat.getHalfHr(y, m, d, i, 0, band)
+            hh2 = Sat.getHalfHr(y, m, d, i, 1, band)
             if hh1:
                 lst.append(hh1)
             if hh2:

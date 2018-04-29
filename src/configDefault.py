@@ -2,11 +2,11 @@
     DO NOT MODIFY, 
     instead modify values in configLocal.py """
 
-from configLocal import config as configLocal
+from .configLocal import config as configLocal
 
 config = {
-    'radarRootPath': '',
-    'satelliteRootPath': '',
+    'radarRootPath': '/home/yuan/Documents/Spring-2018/Senior Design/Weather/new-radar-data',
+    'satelliteRootPath': '/home/yuan/Documents/Spring-2018/Senior Design/Weather/Satellite-data',
     'gmapsKey': ''  # googlemaps api key, used for any maps-related code using gmaps library
 }
 

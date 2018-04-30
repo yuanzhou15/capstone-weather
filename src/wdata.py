@@ -10,6 +10,9 @@ import fnmatch
 
 
 class Radar:
+    minmax = [0, 30]
+    dims = (126, 201)
+
     @staticmethod
     def data_read(filename):
         """
@@ -20,8 +23,8 @@ class Radar:
             Return: the radar image as numpy array or None
         """
 
-        dims = (126, 201)   # rows, columns
-        minmax = [0, 30]  # suggested data limits for display purposes
+        dims = Radar.dims   # rows, columns
+        minmax = Radar.minmax  # suggested data limits for display purposes
 
         # set minmax = [0,0] to use minimum and maximum of each file (excluding missing data)
         # [0,30] mm/hr is a good range for rainfall
@@ -95,6 +98,14 @@ class Radar:
                 continue
             lst.extend(m)
         return lst  # reduce(lambda x,y: x+y, lst, [])
+
+    @staticmethod
+    def isSparse(radimage, threshold=0.0175):
+        """
+            Decides whether the given radar image is too dark or not based on given threshold.
+        """
+        w, h = radimage.shape
+        return np.sum(radimage)*1.0/(w*h) < threshold
 
 
 class Sat:
@@ -176,3 +187,17 @@ class Sat:
         dat = ds['/%s' % var][0]
         ds.close()
         return dat
+
+    @staticmethod
+    def getSatFromRad((radtime, radimg), band, whichHalfHr=0):
+        """
+            Given a specific radar hour, get the corrosponding Satellite file of target band.
+            This will return the first halfhour by default (i.e goes13.yyyy.dd.hh15ss.BAND_band.nc),
+            to use the 2nd halfhour instead pass in: whichHalfHr=1
+
+            Return: corrosponding netcdf dataset or None if none exist in Satellite data 
+        """
+        toks = radtime.split('-')
+        m, h = int(toks[1]), int(toks[-2:])
+        y, d = int(toks[0]), int(toks[2][:2])
+        return Sat.getHalfHr(y, m, d, h, whichHalfHr, band)

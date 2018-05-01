@@ -195,9 +195,9 @@ class Sat:
             This will return the first halfhour by default (i.e goes13.yyyy.dd.hh15ss.BAND_band.nc),
             to use the 2nd halfhour instead pass in: whichHalfHr=1
 
-            Return: corrosponding netcdf dataset or None if none exist in Satellite data 
+            Return: corrosponding netcdf dataset or None if no match exists in Satellite folder 
         """
         toks = radtime.split('-')
-        m, h = int(toks[1]), int(toks[-2:])
+        m, h = int(toks[1]), int(radtime[-2:])
         y, d = int(toks[0]), int(toks[2][:2])
         return Sat.getHalfHr(y, m, d, h, whichHalfHr, band)

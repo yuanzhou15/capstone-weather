@@ -5,7 +5,7 @@
 
 # uncomment to override. None or '' values will still cause an override!!
 config = {
-    'radarRootPath': '',
-    'satelliteRootPath': '',
+    'radarRootPath': '/home/yuan/Documents/Spring-2018/Senior Design/Weather/test-radar',
+    'satelliteRootPath': '/home/yuan/Documents/Spring-2018/Senior Design/Weather/test-satellite',
     'gmapsKey': ''  # googlemaps api key, used for any maps-related code using gmaps library
 }

@@ -105,3 +105,4 @@ venv.bak/
 
 # ignore local config
 configLocal.py
+src/configLocal.py

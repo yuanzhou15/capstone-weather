@@ -1,0 +1,1 @@
+c:\python36\python.exe pix2pix/pix2pix.py --mode test --output_dir C:/Users/Sa/Desktop/weather/p2p/test_out --input_dir C:/Users/Sa/Desktop/weather/p2p/combined/val --checkpoint C:/Users/Sa/Desktop/weather/p2p/train_out

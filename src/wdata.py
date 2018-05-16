@@ -3,11 +3,11 @@
 import numpy as np
 import calendar
 import os
-from configDefault import config, cached_listdir_sat
+from .configDefault import config, cached_listdir_sat
 from netCDF4 import Dataset
 from datetime import datetime, timedelta
 import fnmatch
-
+from functools import reduce
 
 class Radar:
     minmax = [0, 30]
@@ -189,15 +189,17 @@ class Sat:
         return dat
 
     @staticmethod
-    def getSatFromRad((radtime, radimg), band, whichHalfHr=0):
+    def getSatFromRad(radar, band, whichHalfHr=0):
         """
             Given a specific radar hour, get the corrosponding Satellite file of target band.
             This will return the first halfhour by default (i.e goes13.yyyy.dd.hh15ss.BAND_band.nc),
             to use the 2nd halfhour instead pass in: whichHalfHr=1
 
             Return: corrosponding netcdf dataset or None if no match exists in Satellite folder 
+
+            (radtime, radimg)
         """
-        toks = radtime.split('-')
-        m, h = int(toks[1]), int(radtime[-2:])
+        toks = radar[0].split('-')
+        m, h = int(toks[1]), int(radar[0][-2:])
         y, d = int(toks[0]), int(toks[2][:2])
         return Sat.getHalfHr(y, m, d, h, whichHalfHr, band)

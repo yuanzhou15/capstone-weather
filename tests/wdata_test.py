@@ -13,7 +13,7 @@ from exceptions import IOError
 # This is how we can import src module
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.configDefault import config
-from src import wdata
+from src.wdata import Sat, Radar
 
 
 class TestRadar(unittest.TestCase):
@@ -29,10 +29,10 @@ class TestRadar(unittest.TestCase):
     def test_getHour(self):
         for arg, fname in self.hrs:
             if fname is None:
-                self.assertIsNone(wdata.Radar.getHour(*arg))
+                self.assertIsNone(Radar.getHour(*arg))
             else:
-                self.assertTrue(self.eqHr(wdata.Radar.getHour(*arg),
-                                          ('{:>04d}-{:>02d}-{:0>2d}.{:0>2d}'.format(*arg), wdata.Radar.data_read(config['radarRootPath'] + fname))))
+                self.assertTrue(self.eqHr(Radar.getHour(*arg),
+                                          ('{:>04d}-{:>02d}-{:0>2d}.{:0>2d}'.format(*arg), Radar.data_read(config['radarRootPath'] + fname))))
 
     def test_getDay(self):
         pass
@@ -66,13 +66,18 @@ class TestSat(unittest.TestCase):
     ]
     days = []
     month = []
+    radsat = [
+        # y, m, d, h, band, whichHalf
+        (2017, 7, 1, 3, 2, 0),
+        (2017, 7, 1, 3, 2, 0),
+    ]
 
     def test_getHalfHr(self):
         for args, ncFile in self.hfhrs:
             if not ncFile:
-                self.assertIsNone(wdata.Sat.getHalfHr(*args))
+                self.assertIsNone(Sat.getHalfHr(*args))
             else:
-                self.assertTrue(self.ncDSequal(wdata.Sat.getHalfHr(*args),
+                self.assertTrue(self.ncDSequal(Sat.getHalfHr(*args),
                                                Dataset(config['satelliteRootPath']+ncFile, 'r')))
 
     def test_getDay(self):
@@ -83,6 +88,12 @@ class TestSat(unittest.TestCase):
 
     def test_getYear(self):
         pass
+
+    def test_getSatFromRad(self):
+        for y, m, d, h, band, whichHalf in self.radsat:
+            r_ = Radar.getHour(y, m, d, h)
+            self.assertTrue(self.ncDSequal(Sat.getSatFromRad(r_, band, whichHalf),
+                                           Sat.getHalfHr(y, m, d, h, whichHalf, band)))
 
     @staticmethod
     def ncDSequal(ds1, ds2):

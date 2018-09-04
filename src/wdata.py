@@ -3,13 +3,16 @@
 import numpy as np
 import calendar
 import os
-from configDefault import config, cached_listdir_sat
+from .configDefault import config, cached_listdir_sat
 from netCDF4 import Dataset
 from datetime import datetime, timedelta
 import fnmatch
-
+from functools import reduce
 
 class Radar:
+    minmax = [0, 30]
+    dims = (126, 201)
+
     @staticmethod
     def data_read(filename):
         """
@@ -20,8 +23,8 @@ class Radar:
             Return: the radar image as numpy array or None
         """
 
-        dims = (126, 201)   # rows, columns
-        minmax = [0, 30]  # suggested data limits for display purposes
+        dims = Radar.dims   # rows, columns
+        minmax = Radar.minmax  # suggested data limits for display purposes
 
         # set minmax = [0,0] to use minimum and maximum of each file (excluding missing data)
         # [0,30] mm/hr is a good range for rainfall
@@ -96,6 +99,14 @@ class Radar:
             lst.extend(m)
         return lst  # reduce(lambda x,y: x+y, lst, [])
 
+    @staticmethod
+    def isSparse(radimage, threshold=0.0175):
+        """
+            Decides whether the given radar image is too dark or not based on given threshold.
+        """
+        w, h = radimage.shape
+        return np.sum(radimage)*1.0/(w*h) < threshold
+
 
 class Sat:
     @staticmethod
@@ -144,7 +155,7 @@ class Sat:
         lst = []
         for i in range(24):
             hh1 = Sat.getHalfHr(y, m, d, i, 0, band)
-            hh2 = Sat.getHalfHr(y, m, d, i, 0, band)
+            hh2 = Sat.getHalfHr(y, m, d, i, 1, band)
             if hh1:
                 lst.append(hh1)
             if hh2:
@@ -164,3 +175,31 @@ class Sat:
         for i in range(1, 13):
             lst.extend(Sat.getMonth(y, i, band))
         return lst
+
+    @staticmethod
+    def getAndClose(ds, var='data'):
+        """
+            Since netcdf files keep file handles open, loading too many files at once without closing them isn't possible.
+            Use this method to read a target variable from netcdf dataset and close it promptly.
+            Example:
+            band2 = [getAndClose(ds) for ds in getMonth(2017, 7, 2)]
+        """
+        dat = ds['/%s' % var][0]
+        ds.close()
+        return dat
+
+    @staticmethod
+    def getSatFromRad(radar, band, whichHalfHr=0):
+        """
+            Given a specific radar hour, get the corrosponding Satellite file of target band.
+            This will return the first halfhour by default (i.e goes13.yyyy.dd.hh15ss.BAND_band.nc),
+            to use the 2nd halfhour instead pass in: whichHalfHr=1
+
+            Return: corrosponding netcdf dataset or None if no match exists in Satellite folder 
+
+            (radtime, radimg)
+        """
+        toks = radar[0].split('-')
+        m, h = int(toks[1]), int(radar[0][-2:])
+        y, d = int(toks[0]), int(toks[2][:2])
+        return Sat.getHalfHr(y, m, d, h, whichHalfHr, band)

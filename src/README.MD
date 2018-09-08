@@ -1,5 +1,11 @@
+# Assumptions about data location:
+An environment varaible 'weather' is assumed to point to a directory containing two Folders:
+satllite/
+radar/
+which contain the relevant data.
+
 # How to use/import this module:
-done differently depending on where the file is and whether it's a .py or .ipynb file:
+To import wdata and its utitlites, copy the following code depending on where your source-code file is:
 
 cap-weath <br>
   ├── .gitignore <br>

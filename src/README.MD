@@ -1,7 +1,9 @@
 # Assumptions about data location:
 An environment varaible 'weather' is assumed to point to a directory containing two Folders:
-satllite/
-radar/
+satellite/  
+
+radar/  
+
 which contain the relevant data.
 
 # How to use/import this module:

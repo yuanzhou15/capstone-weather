@@ -1,5 +1,6 @@
 # Assumptions about data location:
-An environment varaible 'weather' is assumed to point to a directory containing two Folders:
+An environment varaible 'weather' is assumed to point to a directory containing two Folders:  
+
 satellite/  
 
 radar/  

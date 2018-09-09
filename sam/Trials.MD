@@ -13,3 +13,5 @@ Spring semester:
 
 
 Fall semester:
+
+Trial #1: Bands 2,4 and 6 are comibned in a single image as RGB channels.

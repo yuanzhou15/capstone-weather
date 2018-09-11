@@ -46,3 +46,20 @@ def rmse_dir(prediction_dir, target_dir, channel='gray'):
         
     return rmse(prediction, target);
 
+
+
+def mbe_dir(prediction_dir, target_dir, channel='gray'):
+    if channel=='r':
+        prediction = rgb2red(np.array(Image.open(prediction_dir)));
+        target = rgb2gray(np.array(Image.open(target_dir)));
+    elif channel=='g':
+        prediction = rgb2green(np.array(Image.open(prediction_dir)));
+        target = rgb2gray(np.array(Image.open(target_dir)));
+    elif channel=='b':
+        prediction = rgb2blue(np.array(Image.open(prediction_dir)));
+        target = rgb2gray(np.array(Image.open(target_dir)));
+    else:
+        prediction = rgb2gray(np.array(Image.open(prediction_dir)));
+        target = rgb2gray(np.array(Image.open(target_dir)));
+        
+    return mbe(prediction, target);

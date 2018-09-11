@@ -13,18 +13,35 @@ On successful completion of this goal, the team will have 1 python module that w
 A. Achievable
 Functions can be easily written and tested. The motivation of this task is to modularize the functions and avoid repitions in the code. This will also allow sharing and maintainability of the code. 
 
-R. Succesful creation of the module will allow other team members to collabrate on the code. e.g. Some one suggest a code in to be put in the module, and he/she will know exactly where to find it.
+R. Relevant
+Succesful creation of the module will allow other team members to collabrate on the code. e.g. Some one suggest a code in to be put in the module, and he/she will know exactly where to find it.
 
 T. Time-bound:
 The deadline for this task is anticipated to be 9/11/2018. This task can be completed witih in 1 week. 
 
 
 Smart# 2
-Read 2 more papers on Satellite-Based Multispectral Analysis that discuss about estimating precipitation over open ocean
+
+S. Specific
+Read 1-2 more papers on Satellite-Based Multispectral Analysis that discuss about estimating precipitation over open ocean
 -> PERSIANN-MSA: A Precipitation Estimation Method from Satellite-Based Multispectral Analysis
 -> Evaluation of TRMM Multi-satellite Precipitation Analysis (TMPA) performance in the Central Andes region and its dependency on spatial and temporal resolution
 
+M. Measurable
+This is a rather subjective task and is difficult to meaure. This will not directly result in lines of code. But the completion of the task can be proved by providing a summary in the next report containing information on what the papers talked and what aspects can we use and learn for our project(if any)
+
+A. Achievable
+As I have only read the introductions of the two papers, it is still difficult to evaluate if it is do-able (objectively speaking) in 1 week. However, I can be ceratin that I can atleast finish reading and comprehend 1 paper i.e. -> PERSIANN-MSA: A Precipitation Estimation Method from Satellite-Based Multispectral Analysis as I have already read similar papers on PERSIANN
+
+R. Relevant
+Understanding the similar papers will provide motivation on why we should do a certain step over other and provides foundations on better undertanding of the project as a whole and individual subtasks.   
+
+T. Time-bound:
+The deadline for this task is anticipated to be 9/11/2018. This task should be completed witih in 1 week. 
+
+
 Smart# 3
+i 
 Perform Time series analysis of Bias Error(MBE) and Root Mean Square Error(RMSE)  for PIX2PIX results
 
 

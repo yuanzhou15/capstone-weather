@@ -41,8 +41,21 @@ The deadline for this task is anticipated to be 9/11/2018. This task should be c
 
 
 Smart# 3
-i 
-Perform Time series analysis of Bias Error(MBE) and Root Mean Square Error(RMSE)  for PIX2PIX results
+
+S.Specific
+Perform Time series analysis of Mean Bias Error(MBE) and Root Mean Square Error(RMSE) for PIX2PIX run1 results
+
+M. Measurable
+Performing a Time analysis of errors will result in 2 linecharts for Mean Bias Error(MBE) and Root Mean Square Error(RMSE) for the year 2017
+
+A. Achievable
+This is a doable task and does not require additional research. However, It will require Smart Goal 1's python module to be finished first
+
+R. Relevent
+run1 is the first generated prediction of radar data from pix2pix. In the past, Error matrics were only performed between two images. Line chart will allow comaprison and perfomances of metrices in realtion to different weather states of the region of interest
+
+T. Time-bound:
+The deadline for this task is anticipated to be 9/11/2018. This task should be completed witih in 1 week. 
 
 
 Stretch Goal# 1

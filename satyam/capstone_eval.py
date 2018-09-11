@@ -29,3 +29,20 @@ def mbe(prediction, target):
 def cv_rmse(prediction, target):
     return (rmse(prediction, target)/(np.sum(target)/np.prod(prediction.shape)))*100;
 
+
+def rmse_dir(prediction_dir, target_dir, channel='gray'):
+    if channel=='r':
+        prediction = rgb2red(np.array(Image.open(prediction_dir)));
+        target = rgb2gray(np.array(Image.open(target_dir)));
+    elif channel=='g':
+        prediction = rgb2green(np.array(Image.open(prediction_dir)));
+        target = rgb2gray(np.array(Image.open(target_dir)));
+    elif channel=='b':
+        prediction = rgb2blue(np.array(Image.open(prediction_dir)));
+        target = rgb2gray(np.array(Image.open(target_dir)));
+    else:
+        prediction = rgb2gray(np.array(Image.open(prediction_dir)));
+        target = rgb2gray(np.array(Image.open(target_dir)));
+        
+    return rmse(prediction, target);
+

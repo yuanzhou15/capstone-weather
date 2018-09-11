@@ -14,4 +14,18 @@ def rgb2green(rgb):
 def rgb2blue(rgb):
     return rgb[:,:,2]
     
+def viewImage(img_link):
+    Image.open(img_link).show()
+
+
+def rmse(prediction, target):
+    return np.sqrt(((prediction - target) ** 2).mean());
+
+
+def mbe(prediction, target):
+    return np.sum(target - prediction)/np.sum(target) * 100;
+
+
+def cv_rmse(prediction, target):
+    return (rmse(prediction, target)/(np.sum(target)/np.prod(prediction.shape)))*100;
 

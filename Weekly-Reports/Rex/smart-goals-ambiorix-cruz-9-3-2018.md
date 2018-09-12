@@ -51,7 +51,7 @@ Our project consists of training multiple supervised learning models to accurate
 #### T. Time-bound:
 This task should be done by next Sunday. 9/3/2018
 
-### S.M.A.R.T. Goal 2.
+### S.M.A.R.T. Goal 3.
 
 #### S. Specific:
 I can work on cleaning up the github master repo by organizing readme files, the wiki page, and the documentation. This will not only extend towards what I’ve done that needs documentation, it will extend to what others have yet to post up on the repo. I’ll contact them via our facebook messenger group and ask them questions about what they would like for me to document from their notebooks.
@@ -74,4 +74,6 @@ Since this is the first week of smart goals, there weren't any completed goals l
 
 Smart Goal #1- "Feature Extraction" notebook: https://github.com/rhaxx/capstone-weather/rex/feature-extract.ipynb
 
-Smart Goal #2- "Correlating Data" 
+Smart Goal #2- "Correlating Data" notebook: https://github.com/rhaxx/capstone-weather/rex/correlate.ipynb
+
+Smart Goal #3- "Document/Wiki" https://github.com/yuanzhou15/capstone-weather/wiki/Feature-Team

@@ -102,8 +102,10 @@ Goal 2. Bands 2,4,6 as RGB channels:
 I ran pix2pix using multiple channels in a single image.    
 Turns out it could only use up to 3 (RGB).  
 The input/output directory is called "run1" and is present on the server   
-as well as in [this google folder](https://drive.google.com/drive/folders/1ro-gzywrvPfQRpjvBNXLEUUDwLvd5Em5)  
-
+as well as in [this google folder](https://drive.google.com/drive/folders/1ro-gzywrvPfQRpjvBNXLEUUDwLvd5Em5)   
+[Code to do construct the multi-channel images](https://github.com/yuanzhou15/capstone-weather/blob/master/sam/extarctImgs_MultiChannel.ipynb)
+  
+   
 Goal 3. Failed to be done on time. (or rather not yet finished)  
 This was supposed to be a done in cooperation with the rest of the team to find a baseline for evaluation.  
 We got busy discussing other project matters (mostly what pix2pix input/output are like and what tensorboard is)   

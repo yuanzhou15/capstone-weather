@@ -1,19 +1,18 @@
-""" Actual configurations used by the project.
-    DO NOT MODIFY, 
-    instead modify values in configLocal.py """
+""" Actual configurations used by the project. """
 
-from .configLocal import config as configLocal
+from os import environ
+
+if not 'weatherdata' in environ:
+    Exception("Environment Varaiable 'weather' does not exist")
+weatherdata = environ['weather']
+if weatherdata[-1] not in ['/', '\\']:
+    weatherdata += '/'
 
 config = {
-    'radarRootPath': '/home/yuan/Documents/Spring-2018/Senior Design/Weather/new-radar-data',
-    'satelliteRootPath': '/home/yuan/Documents/Spring-2018/Senior Design/Weather/Satellite-data',
+    'radarRootPath': weatherdata + 'radar/',
+    'satelliteRootPath': weatherdata + 'satellite/',
     'gmapsKey': ''  # googlemaps api key, used for any maps-related code using gmaps library
 }
-
-# override common keys from local config
-for k, v in configLocal.items():
-    if k in config:
-        config[k] = v
 
 # files in satelliteRootPath are enumerated a lot, so we'll cache them here
 import os

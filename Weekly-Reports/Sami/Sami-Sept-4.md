@@ -29,4 +29,5 @@ Once we've decide on a good baseline, I'll re-run the previous things we tried a
 this includes re-evaluting the various settings of Satellite images fed to the CGAN we had last semester.
 
 
-
+Stretch Goal:
+Be able to feed multi-band images to Pix2Pix on the server.

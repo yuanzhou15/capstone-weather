@@ -21,3 +21,33 @@ run1 is the first generated prediction of radar data from pix2pix. In the past, 
 T. Time-bound:
 The deadline for this task is anticipated to be 9/18/2018. This task should be completed witih in 1 week.
 
+
+
+
+Smart Goal 2:
+
+S.Specific
+Install CUDA and Tensorflow on my Ubuntu machine. This will further allow me to work on the code independently without dealing with restrictions imposed on school servers
+
+M. Measaureable
+On succesful completion of the task I can run atleast generate one batch of test and train set.
+
+A. Achievable
+The web has full documenataion and cook books on how to install and run Tensorflow. Sami also has expereince running Tensorflow on his machine So I can reach out to him as well.
+
+
+R. Relevent
+In order to run the pix2pix and train the sateliite data on radar, I will need to have the prequisite libraries installed
+
+
+T. Time-bound:
+The deadline for this task is anticipated to be 9/18/2018. This task should be completed witih in 1 week. It is a realistic time to get started with tensorflow.
+
+
+
+
+Smart Goal 3:
+Read pix2pix paper: Image-to-Image Translation with Conditional Adversarial Networks
+by Phillip Isola et.al.
+
+

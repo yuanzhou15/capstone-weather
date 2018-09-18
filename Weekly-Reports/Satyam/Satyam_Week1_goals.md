@@ -1,7 +1,7 @@
 Satyam Sharma
 9/4/2018
 
-Smart# 1
+## Smart# 1
 
 S. Specific
 For this week, I will work on creating and documenting python modules that would contain all the inclusive functions associated with techniques to measure and validate the estimation of precipitation. The functions would include indices like Mean Bias Error (MBE), Root Mean Square Error (RMSE), Coefficient of Variation of the RMSE (CV-RMSE), Correlation Coefficient (CC), Probability of
@@ -20,7 +20,7 @@ T. Time-bound:
 The deadline for this task is anticipated to be 9/11/2018. This task can be completed witih in 1 week. 
 
 
-Smart# 2
+## Smart# 2
 
 S. Specific
 Read 1-2 more papers on Satellite-Based Multispectral Analysis that discuss about estimating precipitation over open ocean
@@ -40,7 +40,7 @@ T. Time-bound:
 The deadline for this task is anticipated to be 9/11/2018. This task should be completed witih in 1 week. 
 
 
-Smart# 3
+## Smart# 3
 
 S.Specific
 Perform Time series analysis of Mean Bias Error(MBE) and Root Mean Square Error(RMSE) for PIX2PIX run1 results
@@ -58,5 +58,5 @@ T. Time-bound:
 The deadline for this task is anticipated to be 9/11/2018. This task should be completed witih in 1 week. 
 
 
-Stretch Goal# 1
+# Setch Goal# 1
 For Week1, we aim to practice one complete cycle of the workflow suggested in the workflow in a collaborative fashion. Rex will collect, clean, and transform the data. Yuan and Sami will run certain models. I will test and evaluate the models and research how the models can be improved by means of changing the model parameters or input data.

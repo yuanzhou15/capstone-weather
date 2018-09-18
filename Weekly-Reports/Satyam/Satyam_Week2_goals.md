@@ -1,10 +1,10 @@
 Satyam Sharma
 9/11/2018
 
-Stretch Goal 1:
+# Stretch Goal 1:
 This week I will focus on understanding the pix2pix code and running the tensorflow code on my machine. Pixel to pixel mapping has been a strong candidate for estimating precipitation over land. However, the pix2pix have performed really well at the cost of low interpretability of its black-box representation. I will dive into the code and better understand how its architechture is set up. It is relevant as it will help me better asist my peers on suggesting changes in the model and better evaluation the evaluations.
 
-Smart Goal #1:
+## Smart Goal #1:
 
 S.Specific
 Perform Time series analysis of Mean Bias Error(MBE) and Root Mean Square Error(RMSE) for PIX2PIX run2 results. ("Run2" basically is the term Model team and Evalution team is using for the 2nd wave. Each "run" is the data that were manipulated in some form by changinng the channel or feature)
@@ -24,7 +24,7 @@ The deadline for this task is anticipated to be 9/18/2018. This task should be c
 
 
 
-Smart Goal 2:
+## Smart Goal 2:
 
 S.Specific
 Install CUDA and Tensorflow on my Ubuntu machine. This will further allow me to work on the code independently without dealing with restrictions imposed on school servers
@@ -46,7 +46,7 @@ The deadline for this task is anticipated to be 9/18/2018. This task should be c
 
 
 
-Smart Goal 3:
+## Smart Goal 3:
 Read pix2pix paper: Image-to-Image Translation with Conditional Adversarial Networks
 by Phillip Isola et.al.
 

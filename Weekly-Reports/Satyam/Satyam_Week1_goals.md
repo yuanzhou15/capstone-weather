@@ -4,7 +4,7 @@ Satyam Sharma
 ## Smart# 1
 
 S. Specific
-For this week, I will work on creating and documenting python modules that would contain all the inclusive functions associated with techniques to measure and validate the estimation of precipitation. The functions would include indices like Mean Bias Error (MBE), Root Mean Square Error (RMSE), Coefficient of Variation of the RMSE (CV-RMSE), Correlation Coefficient (CC), Probability of
+For this week, I will work on creating python modules that would contain all the inclusive functions associated with techniques to measure and validate the estimation of precipitation. The functions would include indices like Mean Bias Error (MBE), Root Mean Square Error (RMSE), Coefficient of Variation of the RMSE (CV-RMSE), Correlation Coefficient (CC), Probability of
 Detection(POD), and False alarm ratio(FAR). I will also create a example ipython-notebook that will showcase the functions.
 
 M. Measurable

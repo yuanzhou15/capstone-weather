@@ -73,6 +73,13 @@ The deadline for this task is anticipated to be 9/18/2018. This task should be c
 ## Goals achieved from last week
 Goal #1: 
 Creating python modules that would contain all the inclusive functions associated with techniques to measure and validate the estimation of precipitation.
+Commits: 
+https://github.com/satyamsharma/capstone-weather/commit/eb1fa9d4fcc0f51c1b1e4b1c879b60fef4cd28d5
+https://github.com/satyamsharma/capstone-weather/commit/831ad4dfa5476fb7f58ce4939d826dbd6614cda1
+https://github.com/satyamsharma/capstone-weather/commit/8b204d5fa7725c8fb7c47fedf93a6e82a516c099
+https://github.com/satyamsharma/capstone-weather/commit/9fed2944fe450013889a0a1c61765de7b443fb02
+https://github.com/satyamsharma/capstone-weather/commit/6ced5f73c2e66c27d041b96e004c1469d8631aff
+
 
 
 Goal #2:
@@ -80,8 +87,16 @@ Read literature attempting to estimate precipitation and mimic their techniques 
 module for evaluation
 1) PERSIANN-MSA: A Precipitation Estimation Method from Satellite-Based Multispectral Analysis
 2) Evaluation of TRMM Multi-satellite Precipitation Analysis (TMPA) performance in the Central Andes region and its dependency on spatial and temporal resolution.
-
+Proof: Relevant information (especially about evalution) has been highlighted/commented
+URL: https://drive.google.com/open?id=1NHJt3YCU1A5Q6PpPRZ7PaCTQtUU9C8Hf
 
 Goal #3: 
 Performed Time series analysis of Mean Bias Error(MBE) and Root Mean Square Error(RMSE) for PIX2PIX run1 results
 This would make use of the python module I wrote as part of Goal #1. The idea is visulaize how each error metric performs across the year.
+Commits:
+https://github.com/satyamsharma/capstone-weather/commit/01b27af4fc98616bd70c38f403681d21917d0851
+https://github.com/satyamsharma/capstone-weather/commit/3469cf99f5a5046f76b2e90355f8652bda324f74
+https://github.com/satyamsharma/capstone-weather/commit/402523480832db767ffcf4933b826d0431ae19ba
+
+
+

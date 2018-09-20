@@ -68,3 +68,20 @@ as jumping straight to the code might not help.
 
 T. Time-bound:
 The deadline for this task is anticipated to be 9/18/2018. This task should be completed witih in 2 weeks. It is a realistic time to get started with tensorflow.
+
+ 
+## Goals achieved from last week
+Goal #1: 
+Creating python modules that would contain all the inclusive functions associated with techniques to measure and validate the estimation of precipitation.
+
+
+Goal #2:
+Read literature attempting to estimate precipitation and mimic their techniques for evaluation while writing the python
+module for evaluation
+1) PERSIANN-MSA: A Precipitation Estimation Method from Satellite-Based Multispectral Analysis
+2) Evaluation of TRMM Multi-satellite Precipitation Analysis (TMPA) performance in the Central Andes region and its dependency on spatial and temporal resolution.
+
+
+Goal #3: 
+Performed Time series analysis of Mean Bias Error(MBE) and Root Mean Square Error(RMSE) for PIX2PIX run1 results
+This would make use of the python module I wrote as part of Goal #1. The idea is visulaize how each error metric performs across the year.

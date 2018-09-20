@@ -46,7 +46,7 @@ The result of this effort will be shown by a jupyter notebook titled “rex/corr
 It is possible for me to achieve this because all the raw data is stored onto my 1 TB HDD that I got for this class. My computer at home is more than capable of doing this task in a jupyter notebook environment through anaconda navigator. If need be, a linux virtual environment will be used inside my home computer to properly use libraries like “pygrib” to be able to read the raw data into python.
 
 #### R. Relevant:
-Our project consists of training multiple supervised learning models to accurately produce radar data with satellite images and model data as input. These several models will then be examined and evaluated based on how accurately they reproduce the available radar image. This task will take the team one step further into being able to create a base model.
+Our project consists of training multiple supervised learning models to accurately produce radar data with satellite images and model data as input. These several models will then be examined and evaluated based on how accurately they reproduce +the available radar image. This task will take the team one step further into being able to create a base model.
 
 #### T. Time-bound:
 This task should be done by next Sunday. 9/3/2018

@@ -1,4 +1,5 @@
 import numpy as np
+from PIL import Image
 
 def rgb2gray(rgb):
     r, g, b = rgb[:,:,0], rgb[:,:,1], rgb[:,:,2]

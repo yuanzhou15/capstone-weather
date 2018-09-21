@@ -31,20 +31,21 @@ class Radar:
 
         data = np.fromfile(filename, dtype='int16',
                            count=-1, sep='')  # 2 byte integers
-        data = np.reshape(data, dims)
+        data = np.reshape(data, dims).astype(float)
 
         if (np.max(data) > 0):
             # scale data to between 0 and 1 then rail off the extremes
-            if (minmax[0] > 0 or minmax[1] > 0):
-                data[(data < minmax[0])] = minmax[0]
-                data[(data > minmax[1])] = minmax[1]
-                data = (data - minmax[0])/(minmax[1] - minmax[0])
-            else:
-                data = (data - np.min(data))/(np.max(data) - np.min(data))
+            pass
+            # if (minmax[0] > 0 or minmax[1] > 0):
+            #     data[(data < minmax[0])] = minmax[0]
+            #     data[(data > minmax[1])] = minmax[1]
+            #     data = (data - minmax[0])/(minmax[1] - minmax[0])
+            # else:
+            #     data = (data - np.min(data))/(np.max(data) - np.min(data))
         else:
             return None
-        return data
-
+        return ((data - np.min(data)) /(np.max(data)-np.min(data)))
+        
     @staticmethod
     def getHour(y, m, d, h):
         """ Get a single radar image.

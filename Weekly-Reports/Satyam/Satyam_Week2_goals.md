@@ -89,6 +89,7 @@ module for evaluation
 2) Evaluation of TRMM Multi-satellite Precipitation Analysis (TMPA) performance in the Central Andes region and its dependency on spatial and temporal resolution.
 Proof: Relevant information (especially about evalution) has been highlighted/commented
 URL: https://drive.google.com/open?id=1NHJt3YCU1A5Q6PpPRZ7PaCTQtUU9C8Hf
+https://drive.google.com/open?id=1EbgwxQsxNw3gB2OOGNrE3r0rsXqPuC8v
 
 Goal #3: 
 Performed Time series analysis of Mean Bias Error(MBE) and Root Mean Square Error(RMSE) for PIX2PIX run1 results

@@ -69,12 +69,11 @@ class MultiChannelDataset(BaseDataset):
         #     A = A.index_select(2, idx)
         #     B = B.index_select(2, idx)
 
-
         return {'A': A, 'B': B,
                 'A_paths': A_paths[0], 'B_paths': B_path}
 
     def __len__(self):
-        return len(self.A_paths)
+        return len(self.B_paths)
 
     def name(self):
-        return 'AlignedDataset'
+        return 'MultiChannelDataset'

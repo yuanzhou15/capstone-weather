@@ -9,9 +9,9 @@
 
 ## S.M.A.R.T. Goals (next week)
 
-1. 
-2. 
-3. 
+1. Learn how to use xarray to make correlating/working with the data easier.
+2. Perform a sanity-check with the data so that it is over our domain. From all three sources.
+3. Work with sami to construct a function that will allow us to input an image using all three channels of pix2pix.
 
 Week 2- S.M.A.R.T.- Specific, Measurable, Actionable, Relevant, Timebound
 

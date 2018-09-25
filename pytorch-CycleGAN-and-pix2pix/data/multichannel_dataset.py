@@ -16,8 +16,8 @@ class MultiChannelDataset(BaseDataset):
         self.opt = opt
         self.root = opt.dataroot
         self.dir_AB = os.path.join(opt.dataroot, opt.phase)
-        self.A_paths = sorted(make_dataset(self.dir_AB))
-        self.B_paths = sorted(make_dataset(self.dir_AB)) 
+        self.A_paths = sorted(make_dataset(os.path.join(self.dir_AB, 'A')))
+        self.B_paths = sorted(make_dataset(os.path.join(self.dir_AB, 'B')))
         assert(opt.resize_or_crop == 'none')
         assert(self.opt.direction == 'AtoB')
         assert(self.opt.output_nc == 1)

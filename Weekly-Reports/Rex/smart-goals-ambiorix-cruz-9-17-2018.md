@@ -52,16 +52,16 @@ This task should be done by next Sunday. 9/23/2018
 ### S.M.A.R.T. Goal 3.
 
 #### S. Specific:
-I will try to create and optomize a model using keras that will be trained on one model data and used to generate/predict another model data feature.
+Creating a function to properly display the model data.
 
 #### M. Measurable:
-The result of this effort will be shown by a jupyter notebook titled “rex/keras.ipynb” in the master repo. Commits will be done as often as I can remember so the progress can be tracked on github. 
+The result of this effort will be shown by a jupyter notebook titled “rex/model-display.ipynb” in the master repo. Commits will be done as often as I can remember so the progress can be tracked on github. 
 
 #### A. Achievable:
-All of the model data is already available for me to use and keras is very well documented. There are plenty of tutorials online as well to help create some simple models.
+All of the model data is already available for me to use. There are plenty of resources online that can help me crop out data and display it properly.
 
 #### R. Relevant:
-At the end of the semester, everyone should have there own subproject that they have can say they did as well as the bigger group project.
+Being able to properly look at the data to verify if it is anywhere near the satellite or radar data is very important.
 
 #### T. Time-bound:
 This task should be done by next Sunday. 9/23/2018 

@@ -6,7 +6,6 @@ from data.base_dataset import BaseDataset
 from data.image_folder import make_dataset
 from random import random
 from PIL import Image
-# import numpy as np
 
 
 class MultiChannelDataset(BaseDataset):
@@ -23,7 +22,7 @@ class MultiChannelDataset(BaseDataset):
         # assert(opt.resize_or_crop == 'none')
         assert(self.opt.direction == 'AtoB')
         assert(self.opt.output_nc == 1)
-        print('A, B counts: '+str(len(self.A_paths)) + '  '+  str(len(self.B_paths)))
+        print('A, B counts: '+str(len(self.A_paths)) + '  ' + str(len(self.B_paths)))
         if len(self.B_paths)*self.opt.input_nc != len(self.A_paths):
             print("warning: number of A, B images don't match. Double-check image filenames!")
 
@@ -67,7 +66,6 @@ class MultiChannelDataset(BaseDataset):
         tmp = B[0, ...] * 0.299 + B[1, ...] * 0.587 + B[2, ...] * 0.114
         B = tmp.unsqueeze(0)
         
-
         # if (not self.opt.no_flip) and random.random() < 0.5:
         #     # todo: what's this?
         #     idx = [i for i in range(A.size(2) - 1, -1, -1)]

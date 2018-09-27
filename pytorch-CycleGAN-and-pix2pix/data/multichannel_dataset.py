@@ -7,6 +7,8 @@ from data.image_folder import make_dataset
 from random import random
 from PIL import Image
 
+# apparently Unet expects image size of at least 256, so be sure to pass in --loadSize 256 to 
+# resize images once loaded
 
 class MultiChannelDataset(BaseDataset):
     @staticmethod

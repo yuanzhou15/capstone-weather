@@ -43,7 +43,7 @@ class MultiChannelDataset(BaseDataset):
         As = []
         for p in A_path:
             # each image is 8-bit channel
-            Araw = Image.open(p).convert('RGB')#.resize((256, 256), Image.BICUBIC)
+            Araw = Image.open(p).convert('RGB').resize((self.opt.loadSize, self.opt.loadSize), Image.BICUBIC)
             w, h = Araw.size
             assert(w == h)
             assert(w%4 == 0)
@@ -57,7 +57,7 @@ class MultiChannelDataset(BaseDataset):
         A = torch.stack(As, dim=1)[0]
 
         # load B
-        Braw = Image.open(B_path).convert('RGB')#.resize((256, 256), Image.BICUBIC)
+        Braw = Image.open(B_path).convert('RGB').resize((self.opt.loadSize, self.opt.loadSize), Image.BICUBIC)
         w, h = Braw.size
         assert(w == h)
         assert(w%4 == 0)

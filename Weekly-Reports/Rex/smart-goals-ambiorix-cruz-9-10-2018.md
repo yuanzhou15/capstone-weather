@@ -9,11 +9,11 @@
 
 ## S.M.A.R.T. Goals (next week)
 
-1. 
+1. Extracting full features from the new updated model data and saving them as .npy for myself and as .png for sami/yuan
 
-2. Paul gave us new satellite data last semester that i stored into the HDD and haven't looked at. Sami would like it if i go through the updated satellite data and try to understand why the size is a lot larger than the original data giving to us. (Perhaps it is uncropped?)
+2. Updating the correlation folder so we have a subset of files that occurred at the same time between the radar, satellite, and model. With the exception of satellite being 15 minutes ahead.
 
-3. Getting more model data. Last semester, I ordered NAM Model Data from the NOAA website but was only able to order data that was 1800(+6HRS) UTC (2PMto8PM in EST). The satellite and radar data are 30min and hourly respectively.
+3. Look into Keras and start working on an idea for a subproject. Perhaps creating/training a model using 1 model data feature in order to generate another.
 
 Week 2- S.M.A.R.T.- Specific, Measurable, Actionable, Relevant, Timebound
 

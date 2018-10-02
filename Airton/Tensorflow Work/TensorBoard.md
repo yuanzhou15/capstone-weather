@@ -17,10 +17,10 @@ The logdir is path/to/logs which can be seen on the FileWriter code
 
 Below you can see te graphs that can be created using data from the network that is run, which can be useful to detect information like errors.<br/>
 
-<img src="othertrial.png" width="800"><br/> 
+<img src="otherTrial.png" width="800"><br/> 
 
-img src="AandCE.png" width="800"><br/> 
+<img src="AandCE.png" width="800"><br/> 
 
-img src="layer1a.png" width="800"><br/> 
+<img src="layer1a.png" width="800"><br/> 
 
-img src="layer1b.png" width="800"><br/> 
+<img src="layer1b.png" width="800"><br/> 

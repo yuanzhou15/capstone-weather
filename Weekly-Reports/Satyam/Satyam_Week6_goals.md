@@ -1,6 +1,59 @@
 Satyam Sharma
 10/9/2018
 
+# Smart Goal 1:
+During office hours, Prof Grossberg suggested to explore other Machine Learning models and setting a baseline comparison for advanced Deep learning models. So, this week I would like to incorporate a straightforward, but robust ML model into our research stack: Random Forest. 
+
+S.Specific
+This week I will focus on learning and using Random foresnt in scikit learn in python. 
+
+M. Measurable
+Completion of this Goal will result in a jupyter notebook showcasing the different paramenters , inputs and outputs in the pipeline of the Random Forest models.
+
+A. Achievable
+Yes, I have the resources like Siraj Raval's and Andrew Ng's Videos along with Scikit learn documentation to research and create the jupyter Notebook. 
+
+R. Relevent
+Because the project is on using Deep learning Algorithms, we need evidences that show Deep Learning models actually have advantages over the off-the shelf models.
+
+T. Time-bound:
+Yes, the goal is achievable and feasible for completing it in 1 week. 
+
+
+# Smart Goal 2:
+This is related to Smart Goal#1. While researching scikit Learning Models it is also important to understand the visualization methods and realize which features are important. Is it possible to see the individual trees or forests just like it is possible to display the architecture of neurons using tensorboard in tensorflow?
+
+S. Specific
+If it is possbible to visualize the trees, It will be really helpful in determinig what features in the input and output create the most amount of trigger/activation in predicting the output radar.
+
+M. Measurebale
+Completion of this Goal will result in visualizations in the aforementioned notebook
+
+R. Relevent
+Because the project is on using Deep learning Algorithms, we need evidences that show Deep Learning models actually have advantages over the off-the shelf models.
+
+T. Time-bound:
+Yes, the goal is achievable and feasible for completing it in 1 week.
+
+
+# Smart Goal 2:
+This is related to Smart Goal#1. While researching scikit Learning Models it is also important to understand the visualization methods and realize which features are important. Is it possible to see the individual trees or forests just like it is possible to display the architecture of neurons using tensorboard in tensorflow?
+
+S. Specific
+If it is possbible to visualize the trees, It will be really helpful in determinig what features in the input and output create the most amount of trigger/activation in predicting the output radar.
+
+M. Measurebale
+Completion of this Goal will result in visualizations in the aforementioned notebook
+
+R. Relevent
+Because the project is on using Deep learning Algorithms, we need evidences that show Deep Learning models actually have advantages over the off-the shelf models.
+
+T. Time-bound:
+Yes, the goal is achievable and feasible for completing it in 1 week.
+
+# Smart Goal 3:
+TBD
+
 
 ## Goals achieved from last week
 Goal #1:

@@ -27,23 +27,7 @@ S. Specific
 If it is possbible to visualize the trees, It will be really helpful in determinig what features in the input and output create the most amount of trigger/activation in predicting the output radar.
 
 M. Measurebale
-Completion of this Goal will result in visualizations in the aforementioned notebook
-
-R. Relevent
-Because the project is on using Deep learning Algorithms, we need evidences that show Deep Learning models actually have advantages over the off-the shelf models.
-
-T. Time-bound:
-Yes, the goal is achievable and feasible for completing it in 1 week.
-
-
-# Smart Goal 2:
-This is related to Smart Goal#1. While researching scikit Learning Models it is also important to understand the visualization methods and realize which features are important. Is it possible to see the individual trees or forests just like it is possible to display the architecture of neurons using tensorboard in tensorflow?
-
-S. Specific
-If it is possbible to visualize the trees, It will be really helpful in determinig what features in the input and output create the most amount of trigger/activation in predicting the output radar.
-
-M. Measurebale
-Completion of this Goal will result in visualizations in the aforementioned notebook
+Completion of this Goal will result in one jupyter notebook with visualization of the decision tree itself
 
 R. Relevent
 Because the project is on using Deep learning Algorithms, we need evidences that show Deep Learning models actually have advantages over the off-the shelf models.
@@ -53,6 +37,7 @@ Yes, the goal is achievable and feasible for completing it in 1 week.
 
 # Smart Goal 3:
 TBD
+I think Smart Goal#1 by in itself: researching and designing for our use case may be worth in terms of time and effort of two smart goals.
 
 
 ## Goals achieved from last week

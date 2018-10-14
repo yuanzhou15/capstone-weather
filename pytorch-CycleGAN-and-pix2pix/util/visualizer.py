@@ -85,8 +85,15 @@ class Visualizer():
                 label_html_row = ''
                 images = []
                 idx = 0
+                # print("epoch: {} len of visuals:{}".format(epoch,len(visuals)))
+
                 for label, image in visuals.items():
                     image_numpy = util.tensor2im(image)
+
+                    # print("label: %s"%label)
+                    # print("shape of image: %s"%str(image_numpy.shape))
+                    # print("shape of transposed image: %s"%str(image_numpy.transpose([2, 0, 1]).shape))
+
                     label_html_row += '<td>%s</td>' % label
                     images.append(image_numpy.transpose([2, 0, 1]))
                     idx += 1

@@ -6,12 +6,24 @@ import time
 from . import util
 from . import html
 from scipy.misc import imresize
+import torch
+from collections import OrderedDict
 
 if sys.version_info[0] == 2:
     VisdomExceptionBase = Exception
 else:
     VisdomExceptionBase = ConnectionError
 
+def decomposeVisuals(visuals):
+    # print("visuals: %s"%str(len(visuals)))
+    size = visuals['real_A'].size()
+    decomposed = OrderedDict()
+    for i in range(size[1]):
+        decomposed['real_A%d'%(i+1)] = torch.unsqueeze(visuals['real_A'][:,i,:,:], 0)
+        # print(decomposed['real_A%d'%(i+1)].size())
+    decomposed['fake_B'] = visuals['fake_B'][:]
+    decomposed['real_B'] = visuals['real_B'][:]
+    return decomposed
 
 # save image to the disk
 def save_images(webpage, visuals, image_path, aspect_ratio=1.0, width=256):
@@ -21,8 +33,8 @@ def save_images(webpage, visuals, image_path, aspect_ratio=1.0, width=256):
 
     webpage.add_header(name)
     ims, txts, links = [], [], []
-
-    for label, im_data in visuals.items():
+    visualsDec = decomposeVisuals(visuals)
+    for label, im_data in visualsDec.items():
         im = util.tensor2im(im_data)
         image_name = '%s_%s.png' % (name, label)
         save_path = os.path.join(image_dir, image_name)
@@ -31,6 +43,7 @@ def save_images(webpage, visuals, image_path, aspect_ratio=1.0, width=256):
             im = imresize(im, (h, int(w * aspect_ratio)), interp='bicubic')
         if aspect_ratio < 1.0:
             im = imresize(im, (int(h / aspect_ratio), w), interp='bicubic')
+        
         util.save_image(im, save_path)
 
         ims.append(image_name)

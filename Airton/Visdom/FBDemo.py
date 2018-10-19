@@ -94,3 +94,95 @@ try:
             viz.video(videofile=videofile)
     except BaseException:
         print('Skipped video example')
+        
+   # image demo
+    viz.image(
+        np.random.rand(3, 512, 256),
+        opts=dict(title='Random!', caption='How random.'),
+    )
+
+    # grid of images
+    viz.images(
+        np.random.randn(20, 3, 64, 64),
+        opts=dict(title='Random images', caption='How random.')
+    )
+
+    # scatter plots
+    Y = np.random.rand(100)
+    old_scatter = viz.scatter(
+        X=np.random.rand(100, 2),
+        Y=(Y[Y > 0] + 1.5).astype(int),
+        opts=dict(
+            legend=['Didnt', 'Update'],
+            xtickmin=-50,
+            xtickmax=50,
+            xtickstep=0.5,
+            ytickmin=-50,
+            ytickmax=50,
+            ytickstep=0.5,
+            markersymbol='cross-thin-open',
+        ),
+    )
+
+    viz.update_window_opts(
+        win=old_scatter,
+        opts=dict(
+            legend=['Apples', 'Pears'],
+            xtickmin=0,
+            xtickmax=1,
+            xtickstep=0.5,
+            ytickmin=0,
+            ytickmax=1,
+            ytickstep=0.5,
+            markersymbol='cross-thin-open',
+        ),
+    )
+
+    # 3d scatterplot with custom labels and ranges
+    viz.scatter(
+        X=np.random.rand(100, 3),
+        Y=(Y + 1.5).astype(int),
+        opts=dict(
+            legend=['Men', 'Women'],
+            markersize=5,
+            xtickmin=0,
+            xtickmax=2,
+            xlabel='Arbitrary',
+            xtickvals=[0, 0.75, 1.6, 2],
+            ytickmin=0,
+            ytickmax=2,
+            ytickstep=0.5,
+            ztickmin=0,
+            ztickmax=1,
+            ztickstep=0.5,
+        )
+    )
+
+    # 2D scatterplot with custom intensities (red channel)
+    viz.scatter(
+        X=np.random.rand(255, 2),
+        Y=(np.random.rand(255) + 1.5).astype(int),
+        opts=dict(
+            markersize=10,
+            markercolor=np.random.randint(0, 255, (2, 3,)),
+        ),
+    )
+
+    # 2D scatter plot with custom colors per label:
+    viz.scatter(
+        X=np.random.rand(255, 2),
+        Y=(np.random.randn(255) > 0) + 1,
+        opts=dict(
+            markersize=10,
+            markercolor=np.floor(np.random.random((2, 3)) * 255),
+        ),
+    )
+
+    win = viz.scatter(
+        X=np.random.rand(255, 2),
+        opts=dict(
+            markersize=10,
+            markercolor=np.random.randint(0, 255, (255, 3,)),
+        ),
+    )
+

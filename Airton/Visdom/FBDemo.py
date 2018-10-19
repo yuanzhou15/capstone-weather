@@ -186,3 +186,89 @@ try:
         ),
     )
 
+    # assert that the window exists
+    assert viz.win_exists(win), 'Created window marked as not existing'
+
+    # add new trace to scatter plot
+    viz.scatter(
+        X=np.random.rand(255),
+        Y=np.random.rand(255),
+        win=win,
+        name='new_trace',
+        update='new'
+    )
+
+    # 2D scatter plot with text labels:
+    viz.scatter(
+        X=np.random.rand(10, 2),
+        opts=dict(
+            textlabels=['Label %d' % (i + 1) for i in range(10)]
+        )
+    )
+    viz.scatter(
+        X=np.random.rand(10, 2),
+        Y=[1] * 5 + [2] * 3 + [3] * 2,
+        opts=dict(
+            legend=['A', 'B', 'C'],
+            textlabels=['Label %d' % (i + 1) for i in range(10)]
+        )
+    )
+
+    # bar plots
+    viz.bar(X=np.random.rand(20))
+    viz.bar(
+        X=np.abs(np.random.rand(5, 3)),
+        opts=dict(
+            stacked=True,
+            legend=['Facebook', 'Google', 'Twitter'],
+            rownames=['2012', '2013', '2014', '2015', '2016']
+        )
+    )
+    viz.bar(
+        X=np.random.rand(20, 3),
+        opts=dict(
+            stacked=False,
+            legend=['The Netherlands', 'France', 'United States']
+        )
+    )
+
+    # histogram
+    viz.histogram(X=np.random.rand(10000), opts=dict(numbins=20))
+
+    # heatmap
+    viz.heatmap(
+        X=np.outer(np.arange(1, 6), np.arange(1, 11)),
+        opts=dict(
+            columnnames=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'],
+            rownames=['y1', 'y2', 'y3', 'y4', 'y5'],
+            colormap='Electric',
+        )
+    )
+
+    # contour
+    x = np.tile(np.arange(1, 101), (100, 1))
+    y = x.transpose()
+    X = np.exp((((x - 50) ** 2) + ((y - 50) ** 2)) / -(20.0 ** 2))
+    viz.contour(X=X, opts=dict(colormap='Viridis'))
+
+    # surface
+    viz.surf(X=X, opts=dict(colormap='Hot'))
+
+    # line plots
+    viz.line(Y=np.random.rand(10), opts=dict(showlegend=True))
+
+    Y = np.linspace(-5, 5, 100)
+    viz.line(
+        Y=np.column_stack((Y * Y, np.sqrt(Y + 5))),
+        X=np.column_stack((Y, Y)),
+        opts=dict(markers=False),
+    )
+
+    # line using WebGL
+    webgl_num_points = 200000
+    webgl_x = np.linspace(-1, 0, webgl_num_points)
+    webgl_y = webgl_x**3
+    viz.line(X=webgl_x, Y=webgl_y,
+             opts=dict(title='{} points using WebGL'.format(webgl_num_points), webgl=True),
+             win="WebGL demo")
+

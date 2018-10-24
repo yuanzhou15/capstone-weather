@@ -44,14 +44,18 @@ I think Smart Goal#1 by in itself: researching and designing for our use case ma
 Goal #1:
 Research theoratical and statistical aspects of autoencoder pertaining to pix2pix.Outline slides in the weekly meetings on loss functions and their corresponding tensorflow code.
 Commit:
-
+https://github.com/satyamsharma/capstone-weather/commit/a1fe0728f705ec220ef2a53e99b12671ff2d6444
+https://github.com/satyamsharma/capstone-weather/commit/0625842b99953f07e4387317349d454f765b1945
 
 Goal #2:
 Installed Tensorflow of the GPU variant on the computer. Screenshot of the terminal showcasing that tensorflow-GPU is installed and is running successfully.
 Commit:
+https://github.com/satyamsharma/capstone-weather/commit/ab8d474ef42f8fb505643fa37095e60459191ebe
 
 
 Goal #3:
 Research theoratical and statistical aspects of autoencoder pertaining to pix2pix. Juputer notebook for autoencoder decoding showing the autocoding processes in action. 
 Commit:
+https://github.com/satyamsharma/capstone-weather/commit/9ddbdfc1c090d0dc8d2c9befec46aa3ab778a004
+https://github.com/satyamsharma/capstone-weather/commit/afcd9a2979a21b549af57bb72afd0a2bb984b4c6
 

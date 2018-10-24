@@ -49,15 +49,17 @@ Yes, the goal is achievable and feasible for completing it in 1 week.
 Goal #1:
 Researched on Classification and Regression using Random forest for our project. Learnt the different parameters used in the model. Built a jupyter notebook.
 Commit:
-
+https://github.com/satyamsharma/capstone-weather/commit/f1a49ee5cfd7226e5938d03f6e1e109d1652870f
+https://github.com/satyamsharma/capstone-weather/commit/dc8f4ebe3bf1249e1905bbeec7e4693976d7414d
 
 Goal #2:
 Researched on Visualization of Errors and Decision Trees in the Random Forest for
 Classification. Built a *separate* jupyter notebook.
 Commit:
-
+https://github.com/satyamsharma/capstone-weather/commit/fc3ffcb856fe2f4c17352223a3eb2cedc0b7fde0
+https://github.com/satyamsharma/capstone-weather/commit/dc8f4ebe3bf1249e1905bbeec7e4693976d7414d
 
 Goal #3:
 Same as Goal#1. See above 
-Commit:
+
 

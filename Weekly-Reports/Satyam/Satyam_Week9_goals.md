@@ -1,6 +1,42 @@
 Satyam Sharma
 10/30/2018
 
+## Smart Goal #1:
+As suggested in the meeting, I will have to replace the average block filter to true window pixels and expand my input features with {(top-left) (top-center) (top-right) (middle-left) (middle-center) (middle-right) (bottom-left) (bottom-center) (bottom-right)} for each of the satellite bands and the four model data
+
+S.Specific
+I will incorporate the the three window sampling in the random forest and linear regression.
+
+M. Measurable
+Completion of this Goal will result in a jupyter notebook showcasing the feature importance with Satellite and Model Data
+
+A. Achievable
+Due to the time I had spent researching random forest and training with small amouonts of datasets, makes me preapred to deal and interpret results from larger datasets as well.
+
+R. Relevent
+it will us tell which neighborhood pixels are more prominent surrounding a pixel. This also will provide with a better understanding on which features are important in both satellit and in Model data. 
+
+T. Time-bound:
+Yes, the goal is achievable and feasible for completing it in 1 week. 
+
+## Smart Goal #2:
+I have to reinvent my workflow to now also include Model data as well namely: Relative Humidity, Specific Humidity, Temperature, and Visibility and also perform 1x1 and 3x3 window overlapping sampling.
+
+S.Specific
+I will run the 1x1 Pixel's' to Pixel Random Forest Reregression on set of 93 images. This will provide with a better understanding about which features are important. 
+
+M. Measurable
+Completion of this Goal will result in a jupyter notebook showcasing the feature importance with Satellite and Model Data with 3x3 *overlapping* window
+
+A. Achievable
+Due to the time I had spent researching random forest and training with small amouonts of datasets, makes me preapred to deal and interpret results from larger datasets as well.
+
+R. Relevent
+This will provide with a better understanding on which features are important in both satellit and in Model data. 
+
+T. Time-bound:
+Yes, the goal is achievable and feasible for completing it in 1 week. 
+
 
 ## Goals achieved from last week
 Goal #1:

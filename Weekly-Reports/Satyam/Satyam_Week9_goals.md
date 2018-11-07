@@ -35,12 +35,15 @@ R. Relevent
 This will provide with a better understanding on which features are important in both satellit and in Model data. 
 
 T. Time-bound:
-Yes, the goal is achievable and feasible for completing it in 1 week. 
+Yes, the goal is achievable and feasible for completing it in 1 week.
+
+## Smart Goal #3:
+Do the exact same thing did in Goals 1 and 2 now using Multiple Linear Regression. That is include overlapping of the pixels during inputting the dataset and include Model Data.
 
 
 ## Goals achieved from last week
 Goal #1:
-ran the *1x1* Pixel's' to Pixel Random Forest Reregression on set of 93 set of images.  That is, each set consist of the 4 sattelite 256x256 images in the png format and their 1 radar 256x256 image also in png format.
+ran the *1x1* Pixel's' to Pixel Random Forest Reregression on set of 93 set of images.  That is, each set consist of the 5 sattelite 256x256 images in the png format and their 1 radar 256x256 image also in png format.
 Commit:
 https://github.com/satyamsharma/capstone-weather/commit/5814d76eb9b9b13513fca47743675f56c28b5781
 

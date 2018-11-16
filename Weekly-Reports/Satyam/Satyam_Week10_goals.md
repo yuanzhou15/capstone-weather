@@ -6,7 +6,7 @@ With all the previous cases PNGs are being used, but that doesn't have to be the
 
 ## Smart Goal #1:
 S.Specific
-Building a Numpy version of Random Forest for 1x1 window and 3x3 window for five Satellite Bands and the four Model data.
+Building a Numpy version of Random Forest for 1x1 window and 3x3 window for five Satellite only. This time also use cross-validation strategy like K-fold.
 
 M. Measurable
 Completion of this Goal will result in a jupyter notebook with tested and trained evaluation results of NPY dataset.
@@ -23,7 +23,7 @@ Yes, the goal is achievable and feasible for completing it in 1 week. Everything
 
 ## Smart Goal #2:
 S.Specific
-Building a Numpy version of Multiple Linear Regression for 1x1 window and 3x3 window for five Satellite Bands and the four Model data.
+Building a Numpy version of Random Forest for 1x1 window and 3x3 window for five Satellite Bands *and* the four Model data. This time also use cross-validation strategy like K-fold.
 
 M. Measurable
 Completion of this Goal will result in a jupyter notebook with tested and trained evaluation results of NPY dataset.
@@ -41,7 +41,7 @@ Yes, the goal is achievable and feasible for completing it in 1 week. Everything
 
 ## Smart Goal #3:
 S.Specific
-Perform visualization of the image by combining the generated pixels from the different models back to the 2d array.
+Use k-Fold and Perform visualization of the image by combining the generated pixels from the different models back to the 2d array.
 
 M. Measurable
 Completion of this Goal will result in jupyter notebooks from now onwards that will now also contain actual images that were generated.

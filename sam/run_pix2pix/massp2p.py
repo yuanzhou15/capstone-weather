@@ -14,8 +14,6 @@ arg2:    directory where combinations results will be saved
 arg3:    -c produce all combinations of chosen channels. -s do a single pix2pix run on chosen channels
 args...: channels
 
-Don't use relative paths for arg1 and arg2!!!
-
 Example: ./massp2p /path/to/dataset /path/to/dst -c 1 2 6
 """
 
@@ -52,18 +50,20 @@ def setupComb(comb):
         f.write(str(comb.channels))
 
     # copy input/output channels to train/test folders as symlinks
-    for f in glob.glob(datadir + '/train/A/*A%s.png'%str(x)):
-        subprocess.call([
-            'ln', '-s', f, comb.folder + '/train/A/'
-        ])
-    for f in glob.glob(datadir + '/test/A/*A%s.png'%str(x)):
-        subprocess.call([
-            'ln', '-s', f, comb.folder + '/test/A/'
-        ])
+    for x in comb.channels:
+        for f in glob.glob(datadir + '/train/A/*A%s.png'%str(x)):
+            subprocess.call([
+                'ln', '-s', f, comb.folder + '/train/A/'
+            ])
     for f in glob.glob(datadir + '/train/B/*'):
         subprocess.call([
             'ln', '-s', f, comb.folder + '/train/B/'
         ])
+    for x in comb.channels:
+        for f in glob.glob(datadir + '/test/A/*A%s.png'%str(x)):
+            subprocess.call([
+                'ln', '-s', f, comb.folder + '/test/A/'
+            ])
     for f in glob.glob(datadir + '/test/B/*'):
         subprocess.call([
             'ln', '-s', f, comb.folder + '/test/B/'
@@ -150,3 +150,4 @@ if __name__ == '__main__':
         #     print(e)
 
     print("All done.\n")
+

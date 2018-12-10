@@ -1,10 +1,10 @@
 Satyam Sharma
 9/11/2018
 
-Stretch Goal 1:
-This week I will focus on understanding the pix2pix code and running the tensorflow code on my machine. Pixel to pixel mapping has been a strong candidate for estimating precipitation over land. However, the pix2pix have performed really well at the cost of low interpretability of its black-box representation. I will dive into the code and better understand how its architechture is set up. It is relevant as it will help me better asist my peers on suggesting changes in the model and better evaluation the evaluations.
+# Stretch Goal 1:
+This week I will focus on understanding the pix2pix code and running the tensorflow code on my machine. Pixel to pixel mapping has been a strong candidate for estimating precipitation over land. However, the pix2pix have performed really well at the cost of low interpretability of its black-box representation. I will dive into the code and better understand how its architechture is set up. It is relevant as it will help me better asist my peers on suggesting changes in the model and better evaluate the evaluations.
 
-Smart Goal #1:
+## Smart Goal #1:
 
 S.Specific
 Perform Time series analysis of Mean Bias Error(MBE) and Root Mean Square Error(RMSE) for PIX2PIX run2 results. ("Run2" basically is the term Model team and Evalution team is using for the 2nd wave. Each "run" is the data that were manipulated in some form by changinng the channel or feature)
@@ -24,7 +24,7 @@ The deadline for this task is anticipated to be 9/18/2018. This task should be c
 
 
 
-Smart Goal 2:
+## Smart Goal 2:
 
 S.Specific
 Install CUDA and Tensorflow on my Ubuntu machine. This will further allow me to work on the code independently without dealing with restrictions imposed on school servers
@@ -46,8 +46,58 @@ The deadline for this task is anticipated to be 9/18/2018. This task should be c
 
 
 
-Smart Goal 3:
+## Smart Goal 3:
+S.Specific
 Read pix2pix paper: Image-to-Image Translation with Conditional Adversarial Networks
 by Phillip Isola et.al.
+
+M. Measaureable
+This is something difficult to measure, as merely reading the paper is not sufficient. The goal is really to understand. 
+
+
+A. Achievable
+It is a 17 page paper. Intial reading convinces me that the paper does not use too much of scientific jargon. 
+This as a result should make it easy to follow the logic and understand architecture of the models.
+
+In fact of the 17 pages, only 9 pages contain the textual information. Otherwise, 4 pages of the paper are devoted to table of pictures to visualize the performance of the pix2pix. And the remaining 4 pages are used for Refrences and Appendix.   
+
+R. Relevent
+In order to play with the pix2pix code in tensorlflow, it is super crucial to understand the model to suggest meaningful changes,
+as jumping straight to the code might not help.  
+
+
+T. Time-bound:
+The deadline for this task is anticipated to be 9/18/2018. This task should be completed witih in 2 weeks. It is a realistic time to get started with tensorflow.
+
+ 
+## Goals achieved from last week
+Goal #1: 
+Creating python modules that would contain all the inclusive functions associated with techniques to measure and validate the estimation of precipitation.
+Commits: 
+https://github.com/satyamsharma/capstone-weather/commit/eb1fa9d4fcc0f51c1b1e4b1c879b60fef4cd28d5
+https://github.com/satyamsharma/capstone-weather/commit/831ad4dfa5476fb7f58ce4939d826dbd6614cda1
+https://github.com/satyamsharma/capstone-weather/commit/8b204d5fa7725c8fb7c47fedf93a6e82a516c099
+https://github.com/satyamsharma/capstone-weather/commit/9fed2944fe450013889a0a1c61765de7b443fb02
+https://github.com/satyamsharma/capstone-weather/commit/6ced5f73c2e66c27d041b96e004c1469d8631aff
+
+
+
+Goal #2:
+Read literature attempting to estimate precipitation and mimic their techniques for evaluation while writing the python
+module for evaluation
+1) PERSIANN-MSA: A Precipitation Estimation Method from Satellite-Based Multispectral Analysis
+2) Evaluation of TRMM Multi-satellite Precipitation Analysis (TMPA) performance in the Central Andes region and its dependency on spatial and temporal resolution.
+Proof: Relevant information (especially about evalution) has been highlighted/commented
+URL: https://drive.google.com/open?id=1NHJt3YCU1A5Q6PpPRZ7PaCTQtUU9C8Hf
+https://drive.google.com/open?id=1EbgwxQsxNw3gB2OOGNrE3r0rsXqPuC8v
+
+Goal #3: 
+Performed Time series analysis of Mean Bias Error(MBE) and Root Mean Square Error(RMSE) for PIX2PIX run1 results
+This would make use of the python module I wrote as part of Goal #1. The idea is visulaize how each error metric performs across the year.
+Commits:
+https://github.com/satyamsharma/capstone-weather/commit/01b27af4fc98616bd70c38f403681d21917d0851
+https://github.com/satyamsharma/capstone-weather/commit/3469cf99f5a5046f76b2e90355f8652bda324f74
+https://github.com/satyamsharma/capstone-weather/commit/402523480832db767ffcf4933b826d0431ae19ba
+
 
 

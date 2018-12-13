@@ -51,7 +51,7 @@ def setupComb(comb):
 
     # copy input/output channels to train/test folders as symlinks
     for x in comb.channels:
-        for f in glob.glob(datadir + '/train/A/*A%s.png'%str(x)):
+        for f in glob.glob(datadir + '/train/A/*A%s*.png'%str(x)):
             subprocess.call([
                 'ln', '-s', f, comb.folder + '/train/A/'
             ])
@@ -60,7 +60,7 @@ def setupComb(comb):
             'ln', '-s', f, comb.folder + '/train/B/'
         ])
     for x in comb.channels:
-        for f in glob.glob(datadir + '/test/A/*A%s.png'%str(x)):
+        for f in glob.glob(datadir + '/test/A/*A%s*.png'%str(x)):
             subprocess.call([
                 'ln', '-s', f, comb.folder + '/test/A/'
             ])

@@ -7,6 +7,8 @@ args:
     -dst folder: has directories A and B. Will contain test data 
     -num of channels in A
     -test ratio:  e.g. 20
+
+make sure to include trailing / or \\ in directory paths!
 """
 
 import os

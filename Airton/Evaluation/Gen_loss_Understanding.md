@@ -1,7 +1,7 @@
 #  Gen_loss_Gan
 
 <p>The measures are:</p>
-    gen_loss_GAN : predict_fake
+    gen_loss_GAN : predict_fake<br/>
     gen_loss_L1 : targets vs outputs<br/>
     discrim_loss : predict real vs predict fake<br/>
 <br/><p>The gradients are on:</p>
@@ -25,7 +25,7 @@
 <br/><p>We can see the discriminator is trying to minimize predict_fake, and the other to maximize predict_fake.</p>
 <br/><p>Predict fake is:</p>
     with tf.variable_scope("discriminator", reuse=True):<br/>
-        \# 2x [batch, height, width, channels] => [batch, 30, 30, 1]<br/>
+        # 2x [batch, height, width, channels] => [batch, 30, 30, 1]<br/>
         predict_fake = create_discriminator(inputs, outputs)<br/>
 <br/><p>Predict fake outputs are:</p>
     with tf.variable_scope("generator"):<br/>

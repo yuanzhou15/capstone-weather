@@ -3,6 +3,19 @@ from options.train_options import TrainOptions
 from data import CreateDataLoader
 from models import create_model
 from util.visualizer import Visualizer
+from collections import OrderedDict
+import torch
+
+def decomposeVisuals(visuals):
+    # print("visuals: %s"%str(len(visuals)))
+    size = visuals['real_A'].size()
+    decomposed = OrderedDict()
+    for i in range(size[1]):
+        decomposed['real_A%d'%(i+1)] = torch.unsqueeze(visuals['real_A'][:,i,:,:], 0)
+        # print(decomposed['real_A%d'%(i+1)].size())
+    decomposed['fake_B'] = visuals['fake_B'][:]
+    decomposed['real_B'] = visuals['real_B'][:]
+    return decomposed
 
 if __name__ == '__main__':
     opt = TrainOptions().parse()
@@ -33,7 +46,7 @@ if __name__ == '__main__':
 
             if total_steps % opt.display_freq == 0:
                 save_result = total_steps % opt.update_html_freq == 0
-                visualizer.display_current_results(model.get_current_visuals(), epoch, save_result)
+                visualizer.display_current_results(decomposeVisuals(model.get_current_visuals()), epoch, save_result)
 
             if total_steps % opt.print_freq == 0:
                 losses = model.get_current_losses()

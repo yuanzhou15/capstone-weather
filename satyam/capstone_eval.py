@@ -1,6 +1,12 @@
 import numpy as np
 from PIL import Image
 
+from sklearn.metrics import confusion_matrix
+import scikitplot as skplt
+
+import matplotlib as plt
+%matplotlib inline
+
 def rgb2gray(rgb):
     r, g, b = rgb[:,:,0], rgb[:,:,1], rgb[:,:,2]
     gray = 0.2989 * r + 0.5870 * g + 0.1140 * b
@@ -81,4 +87,18 @@ def cv_rmse_dir(prediction_dir, target_dir, channel='gray'):
         target = rgb2gray(np.array(Image.open(target_dir)));
         
     return cv_rmse(prediction, target);
+
+def confusionMatrix_regression (y_true, y_pred, threshold, isNormalized=True):
+    y_true_copy = np.copy(y_true)
+    y_pred_copy = np.copy(y_true)
+    
+    y_true_copy[y_true_copy <= threshold] = 0
+    y_true_copy[y_true_copy > threshold] = 1
+    
+    y_pred_copy[y_true_copy <= threshold] = 0
+    y_pred_copy[y_true_copy > threshold] = 1
+    
+    skplt.metrics.plot_confusion_matrix(y_true_copy, y_pred_copy, normalize=isNormalized)
+    plt.show()
+
 

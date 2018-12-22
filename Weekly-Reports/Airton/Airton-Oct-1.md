@@ -36,12 +36,12 @@ Due next week
 ### S.M.A.R.T. Goal 2.
 
 #### S. Specific:  
-
+Download pytorch implements and test an output since Sami is moving to using pytorch instead of tensorboard from now on.
 #### M. Measurable: 
-This is measurable because . 
+This is measurable because can get the pictures that pytorch outputs and can write a markdon file about the two different implementations 
 
 #### A. Achievable: 
- 
+ It is achievable since already have tensorboard working and now just have to do the same with pytorch
 
 
 #### R. Relevant :
@@ -71,6 +71,9 @@ Due next week
 
 ## S.M.A.R.T. Goals (last week)
 
+Goal 1 achieved Now that the tensorboard is working I was able to generate the graphs of the pix2pix.
+Goal 2 was achieved since I started to look more in depth  of the correlation  of the tensorboard graphs with the code 
+Became a goal 3 since my computer lost all data and I had to fix errors in my computer configs for the future work and had to reinstall programs   
 
 
 

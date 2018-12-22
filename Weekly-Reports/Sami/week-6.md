@@ -1,12 +1,11 @@
 # Smart and Stretch Goals
 
 **Name:** Sami
-**Date:** Sept 25
+**Date:** In no order
 
-## Stretch Goals (1-3)
+## Stretch Goals
 
-1. Be able to run pix2pix on the server from start to finish, using many features (from both datasets) as channels  
-on multiple GPUS
+1. Use what we have to get best possible results
 
 
 ## S.M.A.R.T. Goals (next week)

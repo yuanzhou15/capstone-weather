@@ -1,10 +1,15 @@
 Satyam Sharma
 10/2/2018
 
-# Smart Goal 1:
+# Stretch Goal 1
 The optimizing functions of the Generator and Discriminator used in pix2pix are still an enigma. Therefore, to fully exploit pix2pix for the precipitation prediction purposes it will be beneficial for the team to better understand how the Generator and Discriminator in terms of math
 
+# Stretch Goal 2
+During testing and training tensorflow models, I realized that my computer was taking unusually long time considering that it already has a powerful GPU. Upon investigation, it was found that though tensorflow is installed, but inorder to reach to its near-maximum potential GPU version of tensorflow is a required.
 
+
+
+# Smart Goal 1:
 S.Specific
 Research theoratical and statistical aspects of Generator and Discrimator agents pertaining to pix2pix.
 
@@ -22,8 +27,6 @@ The deadline for this task is anticipated to be 10/8/2018. This task should be c
 
 
 ## Smart Goal #2:
-During testing and training tensorflow models, I realized that my computer was taking unusually long time considering that it already has a powerful GPU. Upon investigation, it was found that though tensorflow is installed, but inorder to reach to its near-maximum potential GPU version of tensorflow is a required.
-
 S.Specific
 Install Tensorflow of the GPU variant on the computer.
 

@@ -1,8 +1,10 @@
 Satyam Sharma
 10/16/2018
 
+# Stretch Goal 1:
+One of the motivation to use Random Forest is the inbuilt method called: Feature Importance. It helps reveal the features that Random Forest uses the most if defining the decision tree. It is thus important to check if the model is stable, by finding the feature importance after fitting the model with a different dataset. 
+
 # Smart Goal 1:
-Smart Goal
 This week also I will focus on learning and using Random forest in scikit learn in python. 
 Implement Random Forest for 1 row of data (1 set of 4 bands of satellite and 1 corresponding radar).
 
@@ -24,9 +26,6 @@ Yes, the goal is achievable and feasible for completing it in 1 week.
 
 
 # Smart Goal 2:
-Smart Goal
-One of the motivation to use Random Forest is the inbuilt method called: Feature Importance. It helps reveal the features that Random Forest uses the most if defining the decision tree. It is thus important to check if the model is stable, by finding the feature importance after fitting the model with a different dataset. 
-
 S.Specific
 Implement, Run, and Test Random Forest for another 1 row of data (1 set of 4 bands of satellite and 1 corresponding radar) before scaling to larger set of datas.
 This week also I will focus on learning and using Random forest in scikit learn in python. 

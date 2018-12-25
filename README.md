@@ -47,8 +47,8 @@ https://github.com/yuanzhou15/capstone-weather/wiki/Powerpoints
 3. [Video Summary - To be added when internet gets fixed]
 4. [Wiki Page!](https://github.com/yuanzhou15/capstone-weather/wiki/Data-Management-Team)
 
-### Satyam's Final Dilverables
-* [Weekly SMART Goals](https://github.com/satyamsharma/capstone-weather/tree/master/Weekly-Reports/Satyam)
+### Satyam's Contribution
 * [Final Paper](https://github.com/satyamsharma/capstone-weather/raw/master/Weekly-Reports/Satyam/Capstone_Project_FinalPaper.pdf)
-* [5 Minute Video](Add here)
-* [Code Contributions](Add here)
+* [Weekly SMART Goals](https://github.com/satyamsharma/capstone-weather/tree/master/Weekly-Reports/Satyam)
+* [5 Minute Video](https://youtu.be/nFGq2bnIEsU)
+* [Code Contributions](https://github.com/yuanzhou15/capstone-weather/tree/master/satyam)

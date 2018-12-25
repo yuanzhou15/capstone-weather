@@ -2,10 +2,10 @@ Satyam Sharma
 10/22/2018
 
 # Stretch Goal #1:
-From the feedback received during the meeting, I will now train the random forest with larger number of input and out images but this time with *3x3* *5x5* *7x7* *9x9* window averaging block. This time I intend to train my model with 93 sets of images. That is, each set consist of the 4 sattelite 256x256 images in the png format and their 1 radar 256x256 image also in png format.
+From the feedback received during the meeting, I will now train the random forest with larger number of input and out images. This time I intend to train my model with 93 sets of images. That is, each set consist of the 4 sattelite 256x256 images in the png format and their 1 radar 256x256 image also in png format.
 
 # Stretch Goal #2:
-From the feedback received during the meeting, I will now train the random forest with larger number of input and out images. This time I intend to train my model with 93 sets of images. That is, each set consist of the 4 sattelite 256x256 images in the png format and their 1 radar 256x256 image also in png format.
+From the feedback received during the meeting, I will now train the random forest with larger number of input and out images but this time with *3x3* *5x5* *7x7* *9x9* window averaging block. This time I intend to train my model with 93 sets of images. That is, each set consist of the 4 sattelite 256x256 images in the png format and their 1 radar 256x256 image also in png format.
 
 ## Smart Goal #1
 

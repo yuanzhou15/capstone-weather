@@ -59,11 +59,14 @@ Yes, the goal is achievable and feasible for completing it in 1 week. Everything
 Goal #1
 Changed filter from "3x3 block average" to "3x3 overlap" :  {(top-left) (top-center) (top-right) (middle-left) (middle-center) (middle-right) (bottom-left) (bottom-center) (bottom-right)} for the inputs for each of the satellite bands and the four model data.
 Commit:
+https://github.com/yuanzhou15/capstone-weather/commit/7ce06e7f1ea7ff6ffcd0b69cb16d4808bf9e30e1
 
 Goal #2:
 Ran *1x1* Pixel's' to Pixel Random Forest Reregression but now with Model data {Relative Humidity, Specific Humidity, Temperature, and Visibility} included.
 Commit:
+https://github.com/yuanzhou15/capstone-weather/commit/c9558e2f90837c1a0273ecd072a844ba3fbc7583
 
 Goal #3:
 Ran *1x1* Pixel's' to Multiple Linear Reregression but now with Model data {Relative Humidity, Specific Humidity, Temperature, and Visibility} included.
 Commit:
+https://github.com/yuanzhou15/capstone-weather/commit/7ce06e7f1ea7ff6ffcd0b69cb16d4808bf9e30e1

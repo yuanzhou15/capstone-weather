@@ -1,9 +1,11 @@
 Satyam Sharma
 10/9/2018
 
-# Smart Goal 1:
+# Stretch Goal #1
 During office hours, Prof Grossberg suggested to explore other Machine Learning models and setting a baseline comparison for advanced Deep learning models. So, this week I would like to incorporate a straightforward, but robust ML model into our research stack: Random Forest. 
 
+
+# Smart Goal 1:
 S.Specific
 This week I will focus on learning and using Random foresnt in scikit learn in python. 
 

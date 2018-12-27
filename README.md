@@ -35,8 +35,20 @@ https://github.com/yuanzhou15/capstone-weather/wiki/Powerpoints
 * [5 Minute Video](https://github.com/yuanzhou15/capstone-weather/blob/master/Weekly-Reports/Yuan/5%20minute%20video.md)
 * [Code Contributions](https://github.com/yuanzhou15/capstone-weather/tree/master/yuan)
 
+### Sam's Final Dilverables
+* [Final Paper and Weekly reports](https://github.com/yuanzhou15/capstone-weather/tree/master/Weekly-Reports/Sami)  
+* [Code Contributions 1](https://github.com/yuanzhou15/capstone-weather/tree/master/sam)  
+* [Code Contributions 2](https://github.com/yuanzhou15/capstone-weather/tree/master/pytorch-CycleGAN-and-pix2pix)  
+* [5 Minute Video]()  
+
 ### Ambiorix Cruz Contribution
 1. [S.M.A.R.T. Goals and Final Paper](https://github.com/yuanzhou15/capstone-weather/tree/master/Weekly-Reports/Rex)
 2. [Workspace with Jupyter Notebooks](https://github.com/yuanzhou15/capstone-weather/tree/master/rex)
 3. [Video Summary - To be added when internet gets fixed]
 4. [Wiki Page!](https://github.com/yuanzhou15/capstone-weather/wiki/Data-Management-Team)
+
+### Satyam's Contribution
+* [Final Paper](https://github.com/satyamsharma/capstone-weather/raw/master/Weekly-Reports/Satyam/Capstone_Project_FinalPaper.pdf)
+* [Weekly SMART Goals](https://github.com/satyamsharma/capstone-weather/tree/master/Weekly-Reports/Satyam)
+* [5 Minute Video](https://youtu.be/nFGq2bnIEsU)
+* [Code Contributions](https://github.com/yuanzhou15/capstone-weather/tree/master/satyam)

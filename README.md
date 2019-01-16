@@ -29,7 +29,7 @@
 ### Ambiorix Cruz Contribution
 1. [S.M.A.R.T. Goals and Final Paper](https://github.com/yuanzhou15/capstone-weather/tree/master/Weekly-Reports/Rex)
 2. [Workspace with Jupyter Notebooks](https://github.com/yuanzhou15/capstone-weather/tree/master/rex)
-3. [Video Summary - To be added when internet gets fixed]
+3. [Video Summary](https://drive.google.com/file/d/1MbD2oqbvjBsJReYN-cjNT11DKJElNoMx/view?usp=sharing)
 4. [Wiki Page!](https://github.com/yuanzhou15/capstone-weather/wiki/Data-Management-Team)
 
 

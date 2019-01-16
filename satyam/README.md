@@ -5,7 +5,11 @@
 ### Folders with suffix Week 8, 9, 10, 11, 12, 13, 14
 They contain the experiments proposed for the particular weeks.
 Please refer the respective Weekly reports.
-Notebooks that were presented in the presentation or in the paper belong in either Week 13 or Week 14
+
+##### NOTE:
+##### Notebooks that were presented in the presentation or in the paper belong in either Week 13 or Week 14
+##### "Week 13" conatains final experiments and their results on Random Forest and Linear Regression
+##### "Week 14" conatains satyam's (my version of) evaluation on pix2pix and vid2vid
 
 ### file: pix2pix_runs_evaluation.ipynb
 Skeleton code for run1 and run2 evaluation for pix2pix
